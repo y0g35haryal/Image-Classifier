@@ -8,6 +8,8 @@ Built entirely in WSL2 + Ubuntu 24.04 reproducible in Google Colab.
 
 ---
 
+To test the model launch prediction.ipynb in google colab and provide images to the required variable. 
+
 ## 📦 Dataset
 
 - Source: [Fruits 262 – Kaggle](https://www.kaggle.com/datasets/aelchimminut/fruits262)
