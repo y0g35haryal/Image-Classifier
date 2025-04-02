@@ -2,9 +2,9 @@
 
 # 🍎 Fruit Image Classifier – MobileNetV2 + TensorFlow (ROCm)
 
-This project is a fruit classification deep learning model trained using **MobileNetV2** and **TensorFlow with ROCm** (AMD GPU support). It classifies images of **10 common fruits** from the [Fruits 262 dataset on Kaggle](https://www.kaggle.com/datasets/aelchimminut/fruits262).  
+This project is a fruit classification deep learning model trained using MobileNetV2 and TensorFlow with ROCm (AMD GPU support). It classifies images of 10 common fruits from the [Fruits 262 dataset on Kaggle].
 
-Built entirely in **WSL2 + Ubuntu 24.04** reproducible in **Google Colab**.
+Built entirely in WSL2 + Ubuntu 24.04 reproducible in Google Colab.
 
 ---
 
