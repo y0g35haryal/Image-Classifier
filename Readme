@@ -1,0 +1,116 @@
+
+
+# 🍎 Fruit Image Classifier – MobileNetV2 + TensorFlow (ROCm)
+
+This project is a fruit classification deep learning model trained using **MobileNetV2** and **TensorFlow with ROCm** (AMD GPU support). It classifies images of **10 common fruits** from the [Fruits 262 dataset on Kaggle](https://www.kaggle.com/datasets/aelchimminut/fruits262).  
+
+Built entirely in **WSL2 + Ubuntu 24.04** reproducible in **Google Colab**.
+
+---
+
+## 📦 Dataset
+
+- Source: [Fruits 262 – Kaggle](https://www.kaggle.com/datasets/aelchimminut/fruits262)
+- Selected 10 common fruit categories:
+
+['apple', 'banana', 'cherry', 'grape', 'guava', 'kiwi', 'lemon', 'mango', 'papaya', 'strawberry']🧠 Model Architecture
+
+
+
+Built using MobileNetV2 as the base, plus:
+
+    Data Augmentation (flip, rotate, brightness, contrast, zoom)
+
+    Global Average Pooling
+
+    Dense layers with ReLU, Dropout (0.3), L2 regularization
+
+    Softmax activation
+
+
+
+🎓 Training Details
+
+    Optimizer: Adam
+
+    Loss: SparseCategoricalCrossentropy
+
+    EarlyStopping & ReduceLROnPlateau callbacks
+
+    Class balancing using class_weight
+
+    Trained for 45 epochs (early stopped)
+
+    Final accuracy: ~97% on test set
+
+
+
+📊 Evaluation Visuals
+
+    📈 Training/Validation Accuracy & Loss
+
+    📊 Class distribution across splits
+
+    ✅ Confusion Matrix
+
+    📈 ROC Curve with AUC score
+
+    🖼️ Image prediction + confidence
+
+
+🚀 Run in Google Colab
+✅ Step-by-Step Guide
+
+    Upload Files to Colab:
+
+        tf_cnn_final.ipynb
+
+        prediction.ipynb
+
+        Optional: imageclassification.keras if using pretrained model
+
+    Upload Dataset or Mount Google Drive
+
+        Upload the pre-split Fruit_Dataset directory with 10 fruit classes
+
+    Train the Model:
+
+        Open and run tf_cnn_final.ipynb
+        This will: train the model, visualize results, save imageclassification.keras
+
+    Predict an Image:
+
+        Open prediction.ipynb
+
+        Update image_path to your image inside /content/test/
+
+        Run the notebook
+
+
+
+💾 Saved Model
+
+The model is saved as:
+
+
+imageclassification.keras
+
+
+🛠️ System Used for Training (WSL2 + ROCm)
+Component	Details
+OS	Ubuntu 24.04 LTS (WSL2)
+Kernel	5.15.153.1-microsoft-standard-WSL2
+Python	3.12.9 (Anaconda/Miniconda)
+TensorFlow	2.17.0 (with ROCm support)
+PyTorch	2.4.0+rocm6.3.4
+GPU	AMD Radeon RX 7900 XT (20gb VRAM)
+ROCm	6.3.4
+OpenCL	2.1
+Conda Environment	colab
+
+
+ Credits
+
+    🧠 Model: MobileNetV2 (TensorFlow)
+
+    📊 Dataset: Fruits 262 – Kaggle
