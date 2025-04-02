@@ -8,7 +8,7 @@ Built entirely in WSL2 + Ubuntu 24.04 reproducible in Google Colab.
 
 ---
 
-To test the model launch prediction.ipynb in google colab and provide images to the required variable. 
+To test the model launch prediction.py in google colab and provide images to the required variable. 
 
 ## 📦 Dataset
 
