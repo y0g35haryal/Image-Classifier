@@ -67,7 +67,7 @@ Built using MobileNetV2 as the base, plus:
 
         tf_cnn_final.ipynb
 
-        prediction.ipynb
+        prediction.py
 
         Optional: imageclassification.keras if using pretrained model
 
@@ -82,7 +82,7 @@ Built using MobileNetV2 as the base, plus:
 
     Predict an Image:
 
-        Open prediction.ipynb
+        Open prediction.py
 
         Update image_path to your image inside /content/test/
 
